@@ -38,12 +38,29 @@ internal class Ejemplos
     //Eliminar un alumno por clave y listar por consola los alumnos
     public static void EjemploDictionary()
     {
+        Alumno m1 = new Alumno(6, "Lucas", 7);
+        Alumno m2 = new Alumno(7, "Alberto", 8);
+        Alumno m3 = new Alumno(8, "Ana", 6);
+        CasoDictionary dic = new CasoDictionary();
+        dic.AddAlumno(1234,m1);
+        dic.AddAlumno(5678, m2);
+        dic.AddAlumno(8910,m3);
+        dic.ListarDictionary();
+        dic.ListarAlumno(1234);
+        dic.ListarAlumno(127);
+        dic.EliminarAlumno(1234);
+        
+       
+
+
 
     }
 
     //Realizar una llamada a cada método definido en CasoLinq y mostar por consola según corresponda
     public static void EjemploLinq()
     {
-
+        CasoLinq linq = new CasoLinq();
+       var primero= linq.GetPrimero();
+        Console.WriteLine($" El primer libro es: {primero.ToString()}");
     }
 }

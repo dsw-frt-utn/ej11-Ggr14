@@ -1,5 +1,10 @@
-﻿namespace Dsw2026Ej11.Collections;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Dsw2026Ej11.Domain;
+namespace Dsw2026Ej11.Collections;
 
+/*
 /*
  * Para cada punto crear un método que permita:
  * 1. Obtener el primer libro (GetPrimero)
@@ -16,4 +21,11 @@
  */
 public class CasoLinq
 {
+    protected List<Libro> libro = Libro.CrearLista();
+    public Libro GetPrimero()
+    {
+        return libro.First();
+    }
+
+    
 }
