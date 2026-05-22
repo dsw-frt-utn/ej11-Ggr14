@@ -49,11 +49,6 @@ internal class Ejemplos
         dic.ListarAlumno(1234);
         dic.ListarAlumno(127);
         dic.EliminarAlumno(1234);
-        
-       
-
-
-
     }
 
     //Realizar una llamada a cada método definido en CasoLinq y mostar por consola según corresponda
