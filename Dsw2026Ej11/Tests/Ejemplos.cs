@@ -60,7 +60,25 @@ internal class Ejemplos
     public static void EjemploLinq()
     {
         CasoLinq linq = new CasoLinq();
-       var primero= linq.GetPrimero();
-        Console.WriteLine($" El primer libro es: {primero.ToString()}");
+        linq.GetPrimero();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetUltimo();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetTotalPrecios();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetPromedioPrecios();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetListById();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetLibros();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetMayorPrecio();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetMenorPrecio();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetMayorPromedio();
+        Console.WriteLine("-------------------------------------------------------------------------------------------");
+        linq.GetOrdenado();
+
     }
 }
